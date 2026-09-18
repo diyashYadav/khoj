@@ -1,4 +1,4 @@
-﻿# Bharat Talaash
+﻿# Khoj
 
 AI-assisted missing-person search and matching platform built using AWS.
 
@@ -75,3 +75,4 @@ Returned results are potential matches and require human verification.
 ## Disclaimer
 
 Similarity scores are candidate-ranking signals and must not be treated as identity confirmation.
+

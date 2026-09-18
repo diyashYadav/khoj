@@ -1,4 +1,4 @@
-import base64
+﻿import base64
 import json
 import time
 import uuid
@@ -6,8 +6,8 @@ import uuid
 import boto3
 
 REGION = "ap-southeast-2"
-QUEUE_URL = "https://sqs.ap-southeast-2.amazonaws.com/743976413697/BharatTalaash-PendingEmbeddings"
-GPU_CONTROLLER_FUNCTION = "BharatTalaash-GPUController"
+QUEUE_URL = "https://sqs.ap-southeast-2.amazonaws.com/743976413697/Khoj-PendingEmbeddings"
+GPU_CONTROLLER_FUNCTION = "Khoj-GPUController"
 CPU_MATCHER_INSTANCE_ID = "i-0506afa068b36435c"
 MAX_MESSAGES_PER_JOB = 2000
 MAX_EMPTY_RECEIVES = 3
@@ -199,3 +199,4 @@ def lambda_handler(event, context):
             }
         ),
     }
+

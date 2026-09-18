@@ -1,4 +1,4 @@
-
+﻿
 
 
 
@@ -159,7 +159,7 @@ def main():
     args = parser.parse_args()
 
     print("=" * 72)
-    print("BHARAT TALAASH — KAGGLE GPU EMBEDDING BUILDER")
+    print("Khoj â€” KAGGLE GPU EMBEDDING BUILDER")
     print("=" * 72)
     print(f"Region : {args.region}")
     print(f"Table  : {args.table}")
@@ -285,3 +285,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

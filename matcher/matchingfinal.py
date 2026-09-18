@@ -1,4 +1,4 @@
-
+﻿
 
 
 
@@ -1294,7 +1294,7 @@ def print_results(results):
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Bharat Talaash production GPU matching engine"
+        description="Khoj production GPU matching engine"
     )
 
     parser.add_argument("--case-file", required=True, help="JSON file with the input case")
@@ -1322,7 +1322,7 @@ def main():
     args = parser.parse_args()
 
     print("=" * 72)
-    print("BHARAT TALAASH - PRODUCTION GPU MATCHING ENGINE")
+    print("Khoj - PRODUCTION GPU MATCHING ENGINE")
     print("=" * 72)
     print(f"\nDynamoDB table : {args.table}")
     print(f"AWS region     : {args.region}")

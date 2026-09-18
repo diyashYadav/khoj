@@ -1,4 +1,4 @@
-import json
+﻿import json
 import time
 import uuid
 from decimal import Decimal
@@ -9,7 +9,7 @@ from boto3.dynamodb.conditions import Attr
 REGION = "ap-southeast-2"
 MISSING_TABLE = "MissingCase"
 MATCH_TABLE = "Match"
-SEARCH_FUNCTION = "BharatTalaash-SearchText"
+SEARCH_FUNCTION = "Khoj-SearchText"
 TOP_MATCHES_PER_CASE = 5
 
 resource = boto3.resource("dynamodb", region_name=REGION)
@@ -123,3 +123,4 @@ def lambda_handler(event, context):
             }
         ),
     }
+

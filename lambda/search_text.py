@@ -1,4 +1,4 @@
-import base64
+﻿import base64
 import json
 import time
 import uuid
@@ -20,7 +20,7 @@ transcribe = boto3.client("transcribe", region_name=REGION)
 ssm = boto3.client("ssm", region_name=REGION)
 
 EXTRACTION_PROMPT = """
-You are an information extraction system for Bharat Talaash,
+You are an information extraction system for Khoj,
 a missing-person search platform.
 
 Extract only information that is explicitly present or reasonably
@@ -215,7 +215,7 @@ def get_media_format(s3_key):
 def transcribe_audio(bucket, key):
     if not bucket or not key:
         raise ValueError("s3_bucket and s3_key are required for audio input")
-    job_name = "bharat-talaash-" + str(uuid.uuid4())
+    job_name = "Khoj-" + str(uuid.uuid4())
     media_uri = f"s3://{bucket}/{key}"
     media_format = get_media_format(key)
     transcribe.start_transcription_job(
@@ -350,3 +350,4 @@ def lambda_handler(event, context):
     except Exception as exc:
         print("SearchText error:", repr(exc))
         return response(500, {"error": "Search failed", "detail": str(exc)})
+

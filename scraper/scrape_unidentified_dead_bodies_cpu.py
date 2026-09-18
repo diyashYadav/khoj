@@ -1,4 +1,4 @@
-import json
+﻿import json
 import logging
 import os
 
@@ -13,7 +13,7 @@ REGION = os.getenv("AWS_DEFAULT_REGION", "ap-southeast-2")
 S3_BUCKET = os.getenv("ZIPNET_S3_BUCKET", "universe-test-1")
 QUEUE_URL = os.getenv(
     "BHARAT_TALAASH_EMBEDDING_QUEUE_URL",
-    "https://sqs.ap-southeast-2.amazonaws.com/743976413697/BharatTalaash-PendingEmbeddings",
+    "https://sqs.ap-southeast-2.amazonaws.com/743976413697/Khoj-PendingEmbeddings",
 )
 LIST_ENDPOINT = f"{BASE_URL}/Victims/GetUnIdentifiedDeadBodiesData/"
 REFERER_PATH = "/Victims/UnIdentifiedDeadBodies"
@@ -78,3 +78,4 @@ if __name__ == "__main__":
     print(
         f"\nEmbedding queue totals: queued={queue_stats['queued']} failed={queue_stats['failed']}"
     )
+

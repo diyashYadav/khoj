@@ -1,4 +1,4 @@
-
+﻿
 
 
 
@@ -1416,7 +1416,7 @@ def main():
 
     parser = argparse.ArgumentParser(
         description=(
-            "Bharat Talaash "
+            "Khoj "
             "Kaggle GPU matching engine"
         )
     )
@@ -1476,7 +1476,7 @@ def main():
 
     print("=" * 72)
     print(
-        "BHARAT TALAASH - "
+        "Khoj - "
         "KAGGLE GPU MATCHING ENGINE"
     )
     print("=" * 72)
@@ -1543,3 +1543,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

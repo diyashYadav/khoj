@@ -1,16 +1,16 @@
-import argparse
+﻿import argparse
 import sys
 import base64
 import json
 
-sys.path.insert(0, "/home/ssm-user/bharat-talaash/matching")
+sys.path.insert(0, "/home/ssm-user/Khoj/matching")
 
 from matchingfinal import MatchingEngine
 
 TABLE = "FoundReport"
 REGION = "ap-southeast-2"
 MODEL = "sentence-transformers/all-MiniLM-L6-v2"
-CACHE = "/home/ssm-user/bharat-talaash/cache/foundreport_embedding_cache.npz"
+CACHE = "/home/ssm-user/Khoj/cache/foundreport_embedding_cache.npz"
 
 def main():
     parser = argparse.ArgumentParser()
@@ -33,3 +33,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

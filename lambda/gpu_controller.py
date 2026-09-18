@@ -1,4 +1,4 @@
-import base64
+﻿import base64
 import json
 import time
 from decimal import Decimal
@@ -8,8 +8,8 @@ import boto3
 REGION = "ap-southeast-2"
 INSTANCE_ID = "i-0643d91b9243e8779"
 MATCH_TABLE = "Match"
-GPU_VENV = "/home/ssm-user/bharat-talaash-gpu/bin/activate"
-GPU_AUTOMATION_DIR = "/home/ssm-user/bharat-talaash/automation"
+GPU_VENV = "/home/ssm-user/Khoj-gpu/bin/activate"
+GPU_AUTOMATION_DIR = "/home/ssm-user/Khoj/automation"
 
 ec2 = boto3.client("ec2", region_name=REGION)
 ssm = boto3.client("ssm", region_name=REGION)
@@ -146,3 +146,4 @@ def lambda_handler(event, context):
                 ec2.stop_instances(InstanceIds=[INSTANCE_ID])
         except Exception as stop_exc:
             print("GPU stop failed:", repr(stop_exc))
+
