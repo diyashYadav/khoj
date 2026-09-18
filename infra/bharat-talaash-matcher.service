@@ -1,0 +1,14 @@
+[Unit]
+Description=Bharat Talaash CPU Matcher
+After=network.target
+
+[Service]
+User=ssm-user
+WorkingDirectory=/home/ssm-user/bharat-talaash/matching
+Environment="PATH=/home/ssm-user/bharat-talaash-cpu312/bin"
+ExecStart=/home/ssm-user/bharat-talaash-cpu312/bin/uvicorn matcher_service:app --host 0.0.0.0 --port 8000
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
